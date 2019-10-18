@@ -5,6 +5,8 @@ const menuTwo = document.getElementById('menu-two');
 const chevronOne = menuOne.getElementsByClassName('fas fa-chevron-down');
 const chevronTwo = menuTwo.getElementsByClassName('fas fa-chevron-down');
 
+// toggles the open dropdown and style of a selected menu based on id:
+
 const toggleMenu = id => {
   const dropdownOne = document.getElementById('dropdown-one');
   const dropdownTwo = document.getElementById('dropdown-two');
@@ -36,25 +38,7 @@ const toggleMenu = id => {
   }
 };
 
-// window.onclick = event => {
-//   if (
-//     !event.target.matches('.menu-select') &&
-//     !event.target.parentElement.matches('.menu-select')
-//   ) {
-//     menuOne.classList.remove('open');
-//     menuTwo.classList.remove('open');
-//     chevronOne[0].classList.remove('down');
-//     chevronTwo[0].classList.remove('down');
-
-//     let dropdowns = document.getElementsByClassName('menu-dropdown');
-//     dropdowns = Array.from(dropdowns);
-//     dropdowns.map(dropdown => {
-//       if (dropdown.classList.contains('selected')) {
-//         dropdown.classList.remove('selected');
-//       }
-//     });
-//   }
-// };
+// closes menu on click or by pressing esc key:
 
 const closeMenu = event => {
   if (

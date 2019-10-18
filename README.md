@@ -1,6 +1,10 @@
-# JS Homework - Drop-down Menu
+# JS Dropdown
 
-# start live server
+# Live demo
+
+https://nameless-bastion-23188.herokuapp.com/
+
+# Start live development server
 
 `npm install`
 
